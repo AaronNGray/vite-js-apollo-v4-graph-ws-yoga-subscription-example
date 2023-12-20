@@ -1,0 +1,33 @@
+{
+  "name": "vite-js-apollo-v3-graph-ws-subscription-ssl-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "AaronNGray <aaronngray@gmail.com> & Robin <rwieruch@fastmail.com> (https://www.robinwieruch.de)",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "@graphql-tools/schema": "^10.0.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "graphql": "^16.6.0",
+    "graphql-playground-middleware-express": "^1.7.22",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-tag": "^2.12.6",
+    "graphql-ws": "^5.5.0",
+    "reflect-metadata": "^0.1.13",
+    "semver": "^7.5.4",
+    "ts-node": "^10.2.1",
+    "typescript": "^5.0.4",
+    "ws": "^8.2.2"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.4",
+    "nodemon": "^3.0.2"
+  }
+}
