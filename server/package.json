@@ -13,6 +13,7 @@
   "dependencies": {
     "@apollo/server": "^4.9.5",
     "@graphql-tools/schema": "^10.0.2",
+    "@graphql-yoga/subscription": "^5.0.0",
     "cors": "^2.8.4",
     "express": "^4.16.4",
     "graphql": "^16.6.0",

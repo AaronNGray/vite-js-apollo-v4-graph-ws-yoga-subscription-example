@@ -6,7 +6,7 @@ import ws from 'ws';
 import { execute, subscribe } from 'graphql';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { useServer } from 'graphql-ws/lib/use/ws';
-import { PubSub } from 'graphql-subscriptions';
+import { createPubSub } from '@graphql-yoga/subscription';
 import gql from 'graphql-tag';
 
 import { ApolloServer } from '@apollo/server';
@@ -18,7 +18,7 @@ import expressPlayground from "graphql-playground-middleware-express";
 
 const MESSAGE_CREATED = 'MESSAGE_CREATED';
 
-const pubSub = new PubSub();
+const pubSub = createPubSub();
 
 const typeDefs = gql`
   type Query {
@@ -44,7 +44,7 @@ const resolvers = {
   },
   Subscription: {
     messageCreated: {
-      subscribe: () => pubSub.asyncIterator(MESSAGE_CREATED),
+      subscribe: () => pubSub.subscribe(MESSAGE_CREATED),
     },
   },
 };
