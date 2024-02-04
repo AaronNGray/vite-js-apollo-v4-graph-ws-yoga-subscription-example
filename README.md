@@ -1,11 +1,11 @@
-# vite-js-apollo-v4-graphql-ws-subscription-ssl-example
+# vite-js-apollo-v4-graphql-ws-yoga-subscription-example
 
 A minimal Apollo Server 4 with Apollo Client 3 application with subscriptions using and graph-ws.
 
 ## Installation
 
-* `git clone https://github.com/AaronNGray/vite-js-apollo-v4-graphql-ws-subscription-ssl-example.git`
-* `cd vite-js-apollo-v4-graphql-ws-subscription-ssl-example`
+* `git clone https://github.com/AaronNGray/vite-js-apollo-v4-graphql-ws-yoga-subscription-example.git`
+* `cd vite-js-apollo-v4-graphql-ws-yoga-subscription-example`
 
 ### Server
 
